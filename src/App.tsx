@@ -238,7 +238,7 @@ function App() {
             />
           </a>
       </header>
-      <p>This is a simple tool to help non-experts visually explore and build intuition for the concept of word/sentence embeddings using the <a href="https://github.com/huggingface/transformers.js">transformers.js</a> library.</p>
+      <p>This is a simple tool to help non-experts visually explore and build intuition for the concept of word/sentence embeddings, a key component of artificial intelligence and large language models like ChatGPT. This tool uses the <a href="https://github.com/huggingface/transformers.js">transformers.js</a> library to load a lightweight, open-source embedding model and perform all necessary computations in the user's browser. No data is collected or stored in any way.</p>
             <div className="card">
         <div className="left-container">
           <div className="inputs-container">
@@ -424,7 +424,7 @@ function App() {
         )}
       </div>
       <h2>What are embeddings?</h2>
-      <p>The ability to do math on language is a foundational building block of AI. For that to work, we need a way to convert language into numbers while preserving meaning.
+      <p>The ability to do math on language is a foundational building block of modern AI. For that to work, we need a way to convert language into numbers while preserving meaning.
       This is a challenge that occupied researchers for decades since the 1950s until embeddings emerged as a solution.
       In simple terms, embeddings represent words/sentences as points in a high-dimensional space (i.e. vectors) where words/sentences that have similar meanings are close to each other, and words/sentences that have different meanings are far apart.</p>
       <h2>How do embeddings work?</h2>
