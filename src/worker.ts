@@ -1,9 +1,9 @@
-import { pipeline, env } from '@xenova/transformers';
+import { pipeline, env, PipelineType } from '@xenova/transformers';
 
 env.allowLocalModels = false;
 
 class MyEmbeddingPipeline {
-  static task = 'feature-extraction';
+  static task: PipelineType = 'feature-extraction';
   static model = 'Xenova/all-MiniLM-L6-v2';
   static instance = null;
 

@@ -96,10 +96,10 @@ function App() {
     const reduced = pca.predict(embeddings, { nComponents: components });
     console.log('Reduced data shape:', reduced.rows, 'x', reduced.columns);
     
-    const reducedArray = reduced.data.map((_, i) => {
+    const reducedArray = reduced.to2DArray().map((row, i) => {
       const dims = inputCount > 3
-        ? [(reduced.get(i, 0) + 1) / 2, (reduced.get(i, 1) + 1) / 2, (reduced.get(i, 2) + 1) / 2]
-        : [(reduced.get(i, 0) + 1) / 2, (reduced.get(i, 1) + 1) / 2];
+        ? [(row[0] + 1) / 2, (row[1] + 1) / 2, (row[2] + 1) / 2]
+        : [(row[0] + 1) / 2, (row[1] + 1) / 2];
       console.log(`Reduced vector ${i}:`, dims);
       return dims;
     });
